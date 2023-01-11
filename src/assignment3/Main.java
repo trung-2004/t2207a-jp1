@@ -6,18 +6,9 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-//        System.out.println("Nhập thông tin khách hàng: ");
+
         VietNamCustomer v1 = new VietNamCustomer();
-//        v1.enter(sc);
-//        v1.inforCustomer();
-//
-//        System.out.print("Thành tiền của khách hàng "+v1.name+" là : "+v1.payment()+" VND\n");
-//
-//        System.out.println("Nhập thông tin khách hàng: ");
         ForeignCustomer f1 = new ForeignCustomer();
-//        f1.enter(sc);
-//        f1.inforCustomer();
-//        System.out.print("Thành tiền của khách hàng "+f1.name+" là : "+f1.payment()+" VND\n");\
 
         ArrayList<Customer> list = new ArrayList<>();
         list.add(v1);
