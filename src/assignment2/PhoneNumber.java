@@ -1,15 +1,16 @@
 package assignment2;
 
+import java.util.ArrayList;
+
 public class PhoneNumber {
     private String name;
-    private String phoneNumber;
+    private ArrayList<String> phones = new ArrayList<>();
 
     public PhoneNumber() {
     }
 
-    public PhoneNumber(String name, String phoneNumber) {
+    public PhoneNumber(String name) {// kiểu dữ liệu arraylist không cần thêm tham số
         this.name = name;
-        this.phoneNumber = phoneNumber;
     }
 
     public String getName() {
@@ -21,12 +22,31 @@ public class PhoneNumber {
         return this;
     }
 
-    public String getPhoneNumber() {
-        return phoneNumber;
+    public ArrayList<String> getPhones() {
+        return phones;
     }
 
-    public PhoneNumber setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
+    public PhoneNumber setPhones(ArrayList<String> phones) {
+        this.phones = phones;
         return this;
+    }
+
+    public void addPhone(String phone) {
+        if (!phones.contains(phone)){
+            this.phones.add(phone);
+        }
+    }
+
+    public void updatePhone(String oldPhone, String newPhone) {
+        if (phones.contains(oldPhone)){
+            int i = phones.indexOf(oldPhone);// tìm vị trí
+            phones.add(i, newPhone);// nạp giá trị mới vào vị trí i
+        }
+    }
+
+    public void deletePhone(String phone) {
+        if (phones.contains(phone)){
+            phones.remove(phone);
+        }
     }
 }
