@@ -22,7 +22,7 @@ public class Main {
         cl.addStudent(st2);
         cl.updateStudent(st2, st3);
         cl.reorganize();
+        System.out.println("Thông tin lớp học sau khi sắp xếp: ");
         cl.inforClassroom();
-
     }
 }

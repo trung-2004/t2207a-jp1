@@ -76,7 +76,6 @@ public class Classroom {
         System.out.println("Tên lớp: "+name);
         System.out.println("Phòng học: "+classroom);
         for (int i = 0; i<list.size(); i++){
-            System.out.println("Tên sinh viên: "+list.get(i).getName()+"  " + " Điểm thi: "+list.get(i).getScore());
             list.get(i).inforStudent();
         }
     }

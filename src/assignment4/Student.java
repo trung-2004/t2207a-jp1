@@ -87,7 +87,7 @@ public class Student {
     public void inforStudent() {
         System.out.println("Mã: " + this.code);
         System.out.println("Tên: " + this.name);
-        System.out.println("Số iện thoại: " + this.phone);
+        System.out.println("Số Điện thoại: " + this.phone);
         System.out.println("Địa chỉ: " + this.address);
         System.out.println("Điểm thi: " + this.score);
     }
